@@ -1,0 +1,25 @@
+body {
+  background: black;
+  color: white;
+}
+
+.intro {
+  height: 200px;
+}
+
+
+.name {
+  margin: .1em;
+  font-family: Helvetica;
+  color: white;
+  line-height: .9em;
+  font-weight: normal;
+  font-size: 1.5em;
+  -webkit-animation: text-3d-animation 5s linear infinite;
+}
+
+.blog-roll a {
+  font-size: 1em;
+  color: white;
+  -webkit-animation: text-3d-animation 5s linear infinite;
+}
