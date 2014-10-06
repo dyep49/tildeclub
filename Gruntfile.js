@@ -8,11 +8,6 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   grunt.initConfig({
-    // serve: {
-    //   options: {
-    //     port: 3000
-    //   }
-    // },
     connect: {
       uses_defaults: {}
     },
@@ -21,7 +16,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       js: {
-        files: ['**/*.js']
+        files: ['js/*.js']
       },
       sass: {
         files: ['sass/*.scss'],
@@ -36,6 +31,11 @@ module.exports = function(grunt) {
         files: {
           'css/main.css': 'sass/main.scss'
         }
+      }
+    },
+    bower: {
+      all: {
+        rjsConfig: 'js/main.js'
       }
     }
   });

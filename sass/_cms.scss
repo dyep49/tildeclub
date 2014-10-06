@@ -1,0 +1,53 @@
+.cms-new-post {
+  padding: 10px;
+  bottom: 0;
+  box-shadow: 0px -5px 10px #ccc;
+  background: white;
+  box-sizing: border-box;
+  margin-top: 10px;
+  height: 300px;
+  background: black;
+}  
+
+#new-cms > .cms-new-post {
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.scribe, .scribe-html {
+  float: left;
+  box-sizing: border-box;
+}
+
+.scribe {
+  height: 200px;
+  width: 50%;
+  overflow: auto;
+  margin-bottom: 1em;
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 0.5em;
+}
+
+.scribe-html {
+  height: 200px;
+  width: 50%;
+  font-family: monospace;
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 0.5em;
+  color: lightgrey;
+  background: black;
+}
+
+.toolbar-editing {
+  margin-bottom: 1em;
+
+  .pure-button {
+   -webkit-animation: background-rainbow 5s linear infinite;
+  }
+}
+
+.toolbar-posting {
+  margin-top: 1em;
+  float: right;
+}
