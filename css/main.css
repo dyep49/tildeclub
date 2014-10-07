@@ -264,4 +264,14 @@ body {
   margin-top: 1em;
   float: right; }
 
+.submit-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 100vw; }
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  -webkit-animation: background-rainbow 5s linear infinite; }
+
 /*# sourceMappingURL=main.css.map */
