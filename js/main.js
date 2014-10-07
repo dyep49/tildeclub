@@ -1,4 +1,5 @@
 require.config({
+  baseUrl: 'js/',
   paths: {
     app: 'angular/app',
     angular: '//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min',
