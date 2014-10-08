@@ -24,7 +24,6 @@ define(['app', 'scribe', 'scribe-plugin-blockquote-command', 'scribe-plugin-curl
 
     return {
       restrict: 'E',
-      transclude: true,
       require: 'ngModel',
       templateUrl: 'js/angular/directives/templates/scribe.html',
       scope: {
@@ -37,16 +36,6 @@ define(['app', 'scribe', 'scribe-plugin-blockquote-command', 'scribe-plugin-curl
 
         var scribeHtml = $(element).find('.scribe-html').first();
 
-        var modelWatch = scope.$watch(function() {
-          return ngModel.$modelValue.text;
-        }, function(newValue) {
-          if(newValue) {
-            scribe.setContent(newValue);
-            scribeHtml.val(newValue);
-            modelWatch();         
-          }
-        })
-
         scribe.on('content-changed', updateHTML);
 
         function updateHTML() { 
@@ -55,12 +44,9 @@ define(['app', 'scribe', 'scribe-plugin-blockquote-command', 'scribe-plugin-curl
         }
 
         function setText(text) {
-          var updatedModel = ngModel.$setViewValue
-          updatedModel.text = text;
           $timeout(function() {
             scope.$apply(function() {
-              modelWatch();
-              ngModel.$setViewValue(updatedModel);        
+              scope.ngModel.text = text;        
             });  
             scribeHtml.val(text);                         
           });
