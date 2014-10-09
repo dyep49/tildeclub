@@ -2,8 +2,8 @@ define(['app', 'scribeInput', 'toTrusted'], function(app) {
 
   app.controller('HomeController', ['$scope', '$sce', '$http', function($scope, $sce, $http) {
 
-    // var bucket = 'dillytilde'
-    var bucket = 'testBucket111'
+    var bucket = 'dillytilde'
+    // var bucket = 'testBucket111'
 
     $scope.message = {
       text: ''
