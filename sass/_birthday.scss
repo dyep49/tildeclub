@@ -1,0 +1,15 @@
+.rainbow-text {
+  -webkit-animation: text-3d-animation 5s linear infinite;
+}
+
+.birthday-img-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.birthday-img {
+  height: 400px;
+  border: 10px solid red;
+   -webkit-animation: border-rainbow 5s linear infinite;
+}
+

@@ -19,7 +19,8 @@ require.config({
     "scribe-plugin-toolbar": "../bower_components/scribe-plugin-toolbar/scribe-plugin-toolbar",
     scribeInput: "angular/directives/scribe-input",
     "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min",
-    toTrusted: "angular/filters/toTrusted"
+    toTrusted: "angular/filters/toTrusted",
+    BirthdayController: 'angular/controllers/birthday'
   },
   shim: {
     angularAMD: [

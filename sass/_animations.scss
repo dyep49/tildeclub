@@ -34,6 +34,42 @@
   }
  }
 
+ @-webkit-keyframes border-rainbow {
+   0% {
+     border: 10px solid #fa0400;
+   }
+   10% {
+     border: 10px solid #fa9a00;
+   }
+   20% {
+     border: 10px solid #c4fa00;
+   }
+   30% {
+     border: 10px solid #2efa00;
+   }
+   40% {
+     border: 10px solid #00fa68;
+   }
+   50% {
+     border: 10px solid #00f6fa;
+   }
+   60% {
+     border: 10px solid #0060fa;
+   }
+   70% {
+    border: 10px solid #3600fa;
+   }
+   80% {
+     border: 10px solid #cc00fa;
+   }
+   90% {
+     border: 10px solid #fa0092;
+   }  
+   100% {
+     border: 10px solid #fa0400;
+   }
+ }
+
  @-webkit-keyframes text-3d-animation {
     0% {
       text-shadow: 2px 2px #fa0400, 4px 4px #f50800, 6px 6px #f00c00, 8px 8px #eb1000, 10px 10px #e61300, 12px 12px #e01600, 14px 14px #db1a00, 16px 16px #d61d00, 18px 18px #d11f00, 20px 20px #cc2200, 22px 22px #c72400, 24px 24px #c22700, 26px 26px #bd2900, 28px 28px #b82b00, 30px 30px #b32d00, 32px 32px #ad2e00, 34px 34px #a83000, 36px 36px #a33100, 38px 38px #9e3200, 40px 40px #993300, 42px 42px #943400, 44px 44px #8f3400, 46px 46px #8a3500, 48px 48px #853500, 50px 50px #803500, 52px 52px #7a3500, 54px 54px #753500, 56px 56px #703400, 58px 58px #6b3400, 60px 60px #663300, 62px 62px #613200, 64px 64px #5c3100, 66px 66px #573000, 68px 68px #522e00, 70px 70px #4d2d00, 72px 72px #472b00, 74px 74px #422900, 76px 76px #3d2700, 78px 78px #382400, 80px 80px #332200, 82px 82px #2e1f00, 84px 84px #291d00, 86px 86px #241a00, 88px 88px #1f1600, 90px 90px #1a1300, 92px 92px #141000, 94px 94px #0f0c00, 96px 96px #0a0800, 98px 98px #050400, 100px 100px black, 0 0 50px, 0 0 55px;

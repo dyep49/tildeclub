@@ -8,6 +8,10 @@ define(['angularAMD', 'angular-route'], function(angularAMD) {
         templateUrl : 'templates/home.html',
         controller : 'HomeController'
       }))
+      .when('/birthday/:name', angularAMD.route({
+        templateUrl : 'templates/birthday.html',
+        controller : 'BirthdayController'
+      }))
       .otherwise({
         redirectTo: '/'
       });
